@@ -1,0 +1,38 @@
+.sidebar__container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 15vw;
+  height: 100vh;
+}
+
+.sidebar__bottom {
+  margin-left: 1em;
+}
+.sidebar__top {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+  margin-top: 2em;
+}
+
+.sidebar__element {
+  margin-top: 1em;
+}
+.sidebar__last__element {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.sidebar__span {
+  margin-left: 10px;
+}
+
+.sidebar__links:hover {
+  text-decoration: none;
+}
+
+.sidebar__links {
+  color: #323131;
+}

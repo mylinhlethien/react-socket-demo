@@ -1,0 +1,87 @@
+#title__color {
+  color: #323131;
+  font-size: 22px;
+}
+
+#card__header {
+  color: #0054fe;
+  background-color: white;
+}
+#card__size {
+  height: 92vh;
+  min-width: 33vw;
+}
+
+.card__header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.title__icon {
+  color: #0054fe;
+  margin-left: 1.5em;
+  font-weight: bold;
+  margin-top: 0.625em;
+  margin-bottom: 0.625em;
+  font-size: 1.2em;
+}
+
+.card__buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.5em;
+  margin-top: 1em;
+}
+
+.button__notClicked__disabled {
+  border-radius: 30px;
+  background-color: #0054fe;
+  color: white;
+  min-width: 250px;
+  height: 60px;
+  border: none;
+  opacity: 0.5;
+}
+.button__notClicked {
+  border-radius: 30px;
+  background-color: #0054fe;
+  color: white;
+  min-width: 250px;
+  height: 60px;
+  border: none;
+}
+.button__clicked {
+  border-radius: 30px;
+  background-color: #dd4104;
+  color: white;
+  min-width: 250px;
+  height: 60px;
+  border: none;
+}
+
+.button__clicked:focus {
+  outline: none;
+}
+
+.button__notClicked:focus {
+  outline: none;
+}
+
+.summup__button {
+  border-radius: 30px;
+  background-color: white;
+  color: #0054fe;
+  border-color: #0054fe;
+  min-width: 250px;
+  height: 60px;
+}
+
+.summup__button:focus {
+  outline: none;
+}
+
+.card__body {
+  overflow: auto;
+  min-height: 77vh;
+}

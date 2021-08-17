@@ -1,0 +1,33 @@
+.tintyCard__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.tinyCard__title {
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+.tinyCard__bottom {
+  display: flex;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+.tinyCard__icon > .MuiSvgIcon-root {
+  font-size: 2em;
+}
+
+.tinyCard__icon__box {
+  opacity: 0.5;
+}
+
+.tinyCard__text {
+  font-size: 22px;
+  justify-content: flex-end;
+  align-self: center;
+  margin-left: 0.625em;
+}

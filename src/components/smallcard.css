@@ -1,0 +1,38 @@
+#small__card__size {
+  min-width: 32vw;
+  max-height: 12.8vh;
+  margin-left: 1em;
+  margin-top: -0.875em;
+}
+#large__card__size {
+  min-width: 32vw;
+  height: 32vh;
+  margin-left: 1em;
+}
+
+#middle__card__size {
+  min-width: 32vw;
+  height: 21.9vh;
+  margin-left: 1em;
+  margin-top: -0.875em;
+}
+
+#card__header {
+  height: 2.7em;
+  border: none;
+}
+.large__card__container {
+  display: flex;
+  justify-content: space-between;
+}
+.picture {
+  height: 6em;
+  border-radius: 10px;
+  position: relative;
+  top: -1.125em;
+}
+
+#title__color {
+  color: #323131;
+  font-size: 22px;
+}

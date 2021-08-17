@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap");
+
+#container__margin {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+  margin-top: 10%;
+}
+
+.body__color {
+  background-color: #eff2f5;
+  min-width: 75vw;
+}
+
+#container__positionning {
+  position: fixed;
+  top: -5em;
+}
+
+.clientData {
+  font-size: 16px;
+  color: #323131;
+  margin-bottom: 0.125em;
+  margin-top: -0.625em;
+  display: flex;
+  flex-direction: column;
+}
+.contractData {
+  font-size: 16px;
+  color: #323131;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5em;
+}
+.contractData > div {
+  margin-bottom: -0.25em;
+}
+.emtionsData {
+  font-size: 16px;
+  color: #323131;
+  margin-top: -0.625em;
+  display: flex;
+  flex-direction: column;
+}
+.message {
+  color: #0054fe;
+}
+.historicData {
+  font-size: 16px;
+  color: #323131;
+  margin-bottom: 0.125em;
+  margin-top: -0.875em;
+  display: flex;
+  flex-direction: column;
+}
+.lightFontWeight {
+  font-weight: 400;
+}
+
+.contratData {
+  color: #323131;
+  margin-bottom: 0.625em;
+  margin-top: 0.625em;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat {
+  background: #09a064;
+  border-radius: 20px;
+  display: inline-block;
+  padding: 10px;
+  color: #fff;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  margin: 5px;
+  position: relative;
+}
+.chat.u2 {
+  float: left;
+  clear: both;
+  border-bottom-left-radius: 0px;
+}
+
+.chat.u1 {
+  float: right;
+  clear: both;
+  border-bottom-right-radius: 0px;
+  background: #0054fe;
+}
+
+.scroll {
+  height: 500px;
+  max-height: 500px;
+  overflow-y: auto;
+}

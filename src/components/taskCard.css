@@ -1,0 +1,15 @@
+.taskCard__title {
+  font-size: 1.5em;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+}
+
+.taskCard__table {
+  width: 100%;
+}
+.taskCard__table__container {
+  width: 95%;
+  padding-left: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
