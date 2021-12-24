@@ -1,6 +1,6 @@
 # IBM Voicebot insurance advisor project: frontend application
 
-This application is the frontend and user interface of the [Augmented call center project](https://github.com/My-Linh-Le-Thien/crm-webapp-demo).
+This application is the frontend and user interface of the [Augmented call center project](https://github.com/mylinhlethien/crm-webapp-demo).
 
 ---
 # Requirements
@@ -40,7 +40,7 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 
     To deploy and run the app locally
 
-    $ git clone https://github.com/My-Linh-Le-Thien/react-socket-demo
+    $ git clone https://github.com/mylinhlethien/react-socket-demo
     $ cd react-socket
 
 ### Configure app
@@ -57,7 +57,7 @@ If you deploy your application on a Kubernetes cluster, it is the URL of the app
 The application should be running on port 3000.
 To try it, you can call your voicebot via your Twilio phone number and the conversation should display in the console.
 
-To run the backend application, please refer to the [voiceagent-api application](https://github.com/My-Linh-Le-Thien/voiceagent-api-demo).
+To run the backend application, please refer to the [voiceagent-api application](https://github.com/mylinhlethien/voiceagent-api-demo).
 
 ---
 ## IBM Cloud Kubernetes deployment
@@ -126,3 +126,9 @@ kubectl logs <POD-ID>
 1. Identify your Worker Public IP using `ibmcloud cs workers YOUR_CLUSTER_NAME`
 2. Identify the Node Port using `kubectl describe service voiceagent-api-service`
 3. Access your application at `http://<WORKER-PUBLIC-IP>:<NODE-PORT>/`
+
+## Contact
+
+My-Linh Le Thien - [@mylinhlethien](https://www.linkedin.com/in/mylinhlethien/) - my-linh.le.thien@ibm.com
+
+Project Link: [https://github.com/mylinhlethien/crm-webapp-demo](https://github.com/mylinhlethien/crm-webapp-demo)
