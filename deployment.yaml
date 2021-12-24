@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: react-socket
-          image: us.icr.io/nvoeztjvpdqabiegedjzfvfdqcdccm/react-socket:latest
+          image: <REGISTRY>/<NAMESPACE>/react-socket:latest
           imagePullPolicy: Always
           ports:
               - containerPort: 80
@@ -25,31 +25,33 @@ apiVersion: v1
 kind: Service
 metadata:
   name: react-socket-service
+  labels:
+    app: react-socket
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   ports:
   - port: 80
     targetPort: 80
     protocol: TCP
+    nodePort: 31000
   selector:
     app: react-socket
 ---
-apiVersion: extensions/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: react-socket-ingress
-  annotations:
-    kubernetes.io/ingress.class: "public-iks-k8s-nginx"
+ name: <glb-name>
+ annotations:
+   kubernetes.io/ingress.class: "public-iks-k8s-nginx"
 spec:
-  tls:
-  - hosts:
-    -  monassureur.myclusterdallas-b62a04919b5efa1e15a70ec5a3351fc4-0000.us-south.containers.appdomain.cloud 
-    secretName: myclusterdallas-b62a04919b5efa1e15a70ec5a3351fc4-0000  
-  rules:
-  - host: monassureur.myclusterdallas-b62a04919b5efa1e15a70ec5a3351fc4-0000.us-south.containers.appdomain.cloud 
-    http:
-      paths:
-      - path: /
-        backend:
-          serviceName: react-socket-service
-          servicePort: 80
+ rules:
+ - host: <glb-name>.<your_domain_name>
+   http:
+     paths:
+     - path: /
+       pathType: Prefix
+       backend:
+         service
+           name: hello-world-service
+           port:
+             number: 80

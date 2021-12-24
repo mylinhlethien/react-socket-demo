@@ -30,11 +30,7 @@ export const Home = () => {
 
     useEffect(() => {
         socket.on("chat-messages", (message, callback) => {
-            if (
-                [...message?.output?.text]?.[0]?.includes(
-                    "Vous allez être mis en relation avec un conseiller. Veuillez patienter"
-                )
-            ) {
+            if (message.output !== undefined && message.output.generic[0].response_type !== "text" && message.output.generic[1].text.includes("Vous allez être mis en relation avec un conseiller")) {
                 setAdvisorCall(true)
             }
             setMessages([...messages, message])
