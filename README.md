@@ -129,6 +129,6 @@ kubectl logs <POD-ID>
 
 ## Contact
 
-My-Linh Le Thien - [@mylinhlethien](https://www.linkedin.com/in/mylinhlethien/) - my-linh.le.thien@ibm.com
+My-Linh Le Thien - [@mylinhlethien](https://www.linkedin.com/in/mylinhlethien/)
 
 Project Link: [https://github.com/mylinhlethien/crm-webapp-demo](https://github.com/mylinhlethien/crm-webapp-demo)
