@@ -11,8 +11,8 @@ import Emotions from "../utils/Emotions"
 import EndMessage from "../utils/EndMessage"
 //import config from '../config';
 
-const socket = io.connect("http://169.63.247.59:31001")
-//const socket = io.connect("http://localhost:8080")
+//const socket = io.connect("http://169.63.247.59:31001")
+const socket = io.connect("http://localhost:8080")
 
 export const Home = () => {
     const [messages, setMessages] = useState([])
